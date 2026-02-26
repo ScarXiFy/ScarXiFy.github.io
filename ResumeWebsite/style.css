@@ -1,0 +1,282 @@
+/* GLOBAL RESET & BASE */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+}
+
+/* PARALLAX HERO */
+.parallax-hero {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("hero.gif"); /* change if needed */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.hero-text h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  letter-spacing: 2px;
+  animation: fade 4s infinite;
+}
+
+.hero-text p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  max-width: 600px;
+  text-align: left;
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+.hero-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+.typing {
+  overflow: hidden;
+  border-right: 2px solid #fff;
+  white-space: nowrap;
+  display: inline-block;
+  animation: typing 9s steps(39) infinite, blink-caret 1s infinite;
+}
+
+/* PAGE LAYOUT */
+.page-container {
+  max-width: 1200px;
+  margin: 60px auto 40px;
+  padding: 0 16px;
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+}
+
+/* Columns */
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* CARDS */
+.card {
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.profile-card {
+  position: relative;
+}
+
+.content-card {
+  padding-bottom: 10px;
+}
+
+.card-content {
+  padding: 16px 20px;
+}
+
+/* PROFILE SECTION */
+.image-container {
+  position: relative;
+  padding-top: 20px;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;  margin: 0 auto;
+}
+
+.name-box {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.name-box h2 {
+  font-size: 1.4rem;
+}
+
+/* TEXT & ICONS */
+.text-grey {
+  color: #666;
+}
+
+.icon {
+  color: #009688;
+  margin-right: 10px;
+  width: 18px;
+}
+
+.section-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 18px 0 8px;
+}
+
+.section-header {
+  font-size: 1.4rem;
+  color: #444;
+  padding: 16px 20px 0;
+}
+
+.date {
+  color: #009688;
+  font-size: 0.9rem;
+  margin: 4px 0;
+}
+
+/* SKILLS */
+.skill-bar {
+  background: #e0e0e0;
+  border-radius: 4px;
+  height: 6px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  background: #333;
+  height: 100%;
+}
+
+/* LANGUAGES */
+.lang-bar {
+  background: #e0e0e0;
+  border-radius: 4px;
+  height: 6px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.lang-fill {
+  background: #333;
+  height: 100%;
+}
+
+.lang-fill.small {
+  width: 20%;
+}
+
+/* FOOTER */
+.footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.footer i {
+  margin: 0 8px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s;
+}
+
+.footer a:hover {
+  opacity: 0.7;
+}
+
+.footer-text {
+  font-size: 0.85rem;
+  margin-top: 8px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-container {
+    margin-top: -40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .parallax-hero {
+    background-attachment: scroll;
+    min-height: 70vh;
+  }
+}
+
+/* ANIMATIONS */
+@keyframes fade {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+@keyframes typing {
+  0%, 100% { width: 0; }
+  44.44% { width: 100%; }
+  55.55% { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #fff; }
+}
