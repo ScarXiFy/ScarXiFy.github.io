@@ -15,13 +15,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;700&display=swap" rel="stylesheet">
 
   <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/jpeg">
+  <link rel="icon" href="enrico.jpg" type="image/jpeg">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="light-grey">
+
+<div class="top-nav" id="main-nav">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">Enricode</a>
+    <div class="nav-links">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <button id="dark-toggle" class="dark-toggle-btn" title="Toggle dark mode">
+      <i class="fa fa-moon-o"></i>
+    </button>
+  </div>
+</div>
 
 <div class="parallax-hero" id="home">
   <div class="hero-overlay"></div>
@@ -45,7 +61,7 @@
 
       <div class="card profile-card text-grey">
         <div class="image-container">
-          <img src="icon.jpg" alt="Profile Photo" class="profile-img">
+          <img src="enrico.jpg" alt="Profile Photo" class="profile-img">
           <div class="name-box">
             <h2>John Enrico D. Lauron</h2>
           </div>
@@ -54,7 +70,9 @@
         <div class="card-content">
           <p><i class="fa fa-briefcase icon"></i>Software Engineer</p>
           <p><i class="fa fa-home icon"></i>Cebu City, Philippines</p>
-          <p><i class="fa fa-envelope icon"></i>johnenricolauron@gmail.com</p>
+          <p class="email-copy" data-email="johnenricolauron@gmail.com">
+            <i class="fa fa-envelope icon"></i>johnenricolauron@gmail.com
+          </p>
           <p><i class="fa fa-phone icon"></i>0945-965-0774</p>
           <br>
           <hr>
@@ -228,5 +246,10 @@
   <p class="footer-text">© 2026 Enricode.</p>
 </footer>
 
+<button id="back-to-top" class="back-to-top" title="Back to top">
+  <i class="fa fa-chevron-up"></i>
+</button>
+
+<script src="script.js"></script>
 </body>
 </html>

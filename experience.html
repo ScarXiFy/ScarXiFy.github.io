@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;700&display=swap" rel="stylesheet">
 
   <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/jpeg">
+  <link rel="icon" href="enrico.jpg" type="image/jpeg">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
@@ -23,8 +23,7 @@
 
 <body class="light-grey">
 
-<!-- Navigation Bar -->
-<div class="top-nav">
+<div class="top-nav" id="main-nav">
   <div class="nav-container">
     <a href="index.html" class="nav-logo">Enricode</a>
     <div class="nav-links">
@@ -33,6 +32,10 @@
       <a href="experience.html" class="active">Experience</a>
       <a href="#contact">Contact</a>
     </div>
+
+    <button id="dark-toggle" class="dark-toggle-btn" title="Toggle dark mode">
+      <i class="fa fa-moon-o"></i>
+    </button>
   </div>
 </div>
 
@@ -41,12 +44,12 @@
 
   <div class="grid">
 
-    <!-- LEFT COLUMN - Quick Info (same as index) -->
+    <!-- LEFT COLUMN -->
     <div class="column left-column">
 
       <div class="card profile-card text-grey">
         <div class="image-container">
-          <img src="icon.jpg" alt="Profile Photo" class="profile-img">
+          <img src="enrico.jpg" alt="Profile Photo" class="profile-img">
           <div class="name-box">
             <h2>John Enrico D. Lauron</h2>
           </div>
@@ -55,7 +58,9 @@
         <div class="card-content">
           <p><i class="fa fa-briefcase icon"></i>Software Engineer</p>
           <p><i class="fa fa-home icon"></i>Cebu City, Philippines</p>
-          <p><i class="fa fa-envelope icon"></i>johnenricolauron@gmail.com</p>
+          <p class="email-copy" data-email="johnenricolauron@gmail.com">
+            <i class="fa fa-envelope icon"></i>johnenricolauron@gmail.com
+          </p>
           <p><i class="fa fa-phone icon"></i>0945-965-0774</p>
           <br>
           <hr>
@@ -77,10 +82,9 @@
 
     </div>
 
-    <!-- RIGHT COLUMN - Work Experience -->
+    <!-- RIGHT COLUMN -->
     <div class="column right-column">
 
-      <!-- Current Position -->
       <div class="card content-card">
         <h2 class="section-header"><i class="fa fa-briefcase"></i> Current Position</h2>
         
@@ -102,7 +106,6 @@
         </div>
       </div>
 
-      <!-- Previous Positions -->
       <div class="card content-card">
         <h2 class="section-header"><i class="fa fa-history"></i> Previous Experience</h2>
         
@@ -162,7 +165,6 @@
         </div>
       </div>
 
-      <!-- Achievements -->
       <div class="card content-card">
         <h2 class="section-header"><i class="fa fa-star"></i> Notable Achievements</h2>
         
@@ -207,5 +209,10 @@
   <p class="footer-text">© 2026 Enricode.</p>
 </footer>
 
+<button id="back-to-top" class="back-to-top" title="Back to top">
+  <i class="fa fa-chevron-up"></i>
+</button>
+
+<script src="script.js"></script>
 </body>
 </html>
