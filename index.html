@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Enricode</title>
+  <title>John Enrico Lauron | Computer Engineering Student Portfolio</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Minimal technical portfolio for John Enrico D. Lauron, a Computer Engineering student building full-stack web applications and embedded systems.">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,52 +24,229 @@
 
 <body class="light-grey">
 
+<div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+<div class="ambient-motion" aria-hidden="true">
+  <span class="motion-blob blob-one"></span>
+  <span class="motion-blob blob-two"></span>
+  <span class="motion-blob blob-three"></span>
+</div>
+
 <div class="top-nav" id="main-nav">
   <div class="nav-container">
-    <a href="index.html" class="nav-logo">Enricode</a>
+    <a href="index.html" class="nav-logo">ScarXiFy</a>
     <div class="nav-links">
       <a href="#home" class="active">Home</a>
       <a href="#about">About</a>
+      <a href="#projects">Projects</a>
       <a href="experience.html">Experience</a>
       <a href="#contact">Contact</a>
     </div>
-
-    <button id="dark-toggle" class="dark-toggle-btn" title="Toggle dark mode">
-      <i class="fa fa-moon-o"></i>
-    </button>
   </div>
 </div>
 
-<div class="parallax-hero" id="home">
-  <div class="hero-overlay"></div>
-  <div class="hero-text">
-    <h1>Enricode</h1>
-    <p><span class="typing">Software Engineer | Innovating with Code</span></p>
-    <div class="hero-buttons">
-      <a href="#about" class="hero-btn">View Portfolio</a>
-      <a href="experience.html" class="hero-btn experience-btn">Work Experience</a>
+<section class="parallax-hero" id="home" aria-labelledby="hero-title">
+  <div class="hero-shell container" data-parallax="hero-content">
+    <div class="hero-text">
+      <div class="hero-kicker-row">
+        <p class="hero-kicker">John Enrico D. Lauron / ScarXiFy</p>
+        <span class="availability-badge"><span class="status-dot"></span>Available for Summer 2026 Internship</span>
+      </div>
+      <h1 id="hero-title">Computer Engineering student building full-stack apps and embedded systems.</h1>
+      <p class="hero-support"><span class="typing">I build practical student projects across web apps, databases, low-level programming, and hardware-aware control logic.</span></p>
+      <div class="hero-buttons">
+        <a href="#projects" class="hero-btn primary-btn">View Projects</a>
+        <a href="#contact" class="hero-btn">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-visual-grid"></div>
+      <div class="hero-orbit orbit-one">
+        <span class="orbit-node"></span>
+      </div>
+      <div class="hero-orbit orbit-two">
+        <span class="orbit-node"></span>
+      </div>
+      <div class="cube-scene">
+        <div class="wire-cube">
+          <span class="cube-face cube-front"></span>
+          <span class="cube-face cube-back"></span>
+          <span class="cube-face cube-right"></span>
+          <span class="cube-face cube-left"></span>
+          <span class="cube-face cube-top"></span>
+          <span class="cube-face cube-bottom"></span>
+        </div>
+      </div>
+      <span class="visual-node node-one"></span>
+      <span class="visual-node node-two"></span>
+      <span class="visual-node node-three"></span>
     </div>
   </div>
-</div>
+</section>
+
+<main>
+<section class="featured-projects container code-window" id="projects" aria-label="Featured projects" data-reveal>
+  <div class="project-grid">
+    <a class="project-card content-card" href="https://github.com/ScarXiFy/carolinian-events" target="_blank" rel="noopener noreferrer" aria-label="Open Carolinian Events Tracker on GitHub">
+      <div class="project-card-header">
+        <h3>Carolinian Events Tracker</h3>
+        <span class="project-year">web / 2025</span>
+      </div>
+      <p class="project-problem"><strong>Problem:</strong> Students and organizers need a clearer way to publish, discover, and manage university events.</p>
+      <ul class="project-list">
+        <li>Event browsing and management flow</li>
+        <li>Responsive interface for campus users</li>
+        <li>Structured event details for easier discovery</li>
+      </ul>
+      <div class="project-tech-icons" aria-label="Carolinian Events Tracker technologies">
+        <i class="devicon-typescript-plain" title="TypeScript"></i>
+        <i class="devicon-javascript-plain" title="JavaScript"></i>
+        <i class="devicon-html5-plain" title="HTML5"></i>
+        <i class="devicon-css3-plain" title="CSS3"></i>
+      </div>
+    </a>
+
+    <a class="project-card content-card" href="https://github.com/Noxctis/Kwartrack" target="_blank" rel="noopener noreferrer" aria-label="Open KwarTrack on GitHub">
+      <div class="project-card-header">
+        <h3>KwarTrack</h3>
+        <span class="project-year">app / 2024</span>
+      </div>
+      <p class="project-problem"><strong>Problem:</strong> Students need a simple way to track spending and understand where their money goes.</p>
+      <ul class="project-list">
+        <li>Expense tracking workflow</li>
+        <li>Financial records organized for review</li>
+        <li>Java-based application logic</li>
+      </ul>
+      <div class="project-tech-icons" aria-label="KwarTrack technologies">
+        <i class="devicon-java-plain" title="Java"></i>
+      </div>
+    </a>
+
+    <a class="project-card content-card" href="https://github.com/ScarXiFy/T3via" target="_blank" rel="noopener noreferrer" aria-label="Open T3via on GitHub">
+      <div class="project-card-header">
+        <h3>T3via</h3>
+        <span class="project-year">cli / 2022</span>
+      </div>
+      <p class="project-problem"><strong>Problem:</strong> Quiz games need clear question flow, scoring, and replayable interaction in a console environment.</p>
+      <ul class="project-list">
+        <li>Interactive trivia questions</li>
+        <li>Score handling and user input flow</li>
+        <li>Core programming practice in C</li>
+      </ul>
+      <div class="project-tech-icons" aria-label="T3via technologies">
+        <i class="devicon-c-original" title="C"></i>
+      </div>
+    </a>
+
+    <a class="project-card content-card" href="https://github.com/ScarXiFy/CPE-3104" target="_blank" rel="noopener noreferrer" aria-label="Open 8086 Fish Hatchery Control System on GitHub">
+      <div class="project-card-header">
+        <h3>8086 Fish Hatchery Control System</h3>
+        <span class="project-year">embedded / 2025</span>
+      </div>
+      <p class="project-problem"><strong>Problem:</strong> Fish egg hatcheries need reliable control logic for environmental monitoring and response.</p>
+      <ul class="project-list">
+        <li>Microprocessor-based control concept</li>
+        <li>Hardware-aware logic for hatchery conditions</li>
+        <li>x86 Assembly programming practice</li>
+      </ul>
+      <div class="project-tech-icons" aria-label="8086 Fish Hatchery Control System technologies">
+        <i class="fa fa-microchip" title="x86 Assembly"></i>
+      </div>
+    </a>
+
+    <a class="project-card content-card" href="https://github.com/ScarXiFy/aquatic-hatchery-monitoring-system" target="_blank" rel="noopener noreferrer" aria-label="Open Aquatic Hatchery Monitoring System on GitHub">
+      <div class="project-card-header">
+        <h3>Aquatic Hatchery Monitoring System</h3>
+        <span class="project-year">iot / 2025</span>
+      </div>
+      <p class="project-problem"><strong>Problem:</strong> Hatchery operators need simple monitoring for water conditions and system status.</p>
+      <ul class="project-list">
+        <li>Monitoring concept for hatchery conditions</li>
+        <li>Sensor-focused status tracking</li>
+        <li>Hardware-aware project structure</li>
+      </ul>
+      <div class="project-tech-icons" aria-label="Aquatic Hatchery Monitoring System technologies">
+        <i class="fa fa-microchip" title="Embedded Systems"></i>
+        <i class="devicon-python-plain" title="Python"></i>
+      </div>
+    </a>
+
+    <a class="project-card content-card" href="https://github.com/ScarXiFy/flask-gemini-chat-app" target="_blank" rel="noopener noreferrer" aria-label="Open Flask Gemini Chat App on GitHub">
+      <div class="project-card-header">
+        <h3>Flask Gemini Chat App</h3>
+        <span class="project-year">ai / 2025</span>
+      </div>
+      <p class="project-problem"><strong>Problem:</strong> Students need a small, inspectable chat app for practicing AI-assisted web workflows.</p>
+      <ul class="project-list">
+        <li>Flask-based chat interface</li>
+        <li>Gemini API integration practice</li>
+        <li>Environment-based configuration</li>
+      </ul>
+      <div class="project-tech-icons" aria-label="Flask Gemini Chat App technologies">
+        <i class="devicon-flask-original" title="Flask"></i>
+        <i class="devicon-python-plain" title="Python"></i>
+        <i class="devicon-html5-plain" title="HTML5"></i>
+        <i class="devicon-css3-plain" title="CSS3"></i>
+      </div>
+    </a>
+
+    <a class="project-card content-card" href="https://github.com/ScarXiFy/google-sheets-machine-efficiency-dashboard" target="_blank" rel="noopener noreferrer" aria-label="Open Machine Efficiency Dashboard on GitHub">
+      <div class="project-card-header">
+        <h3>Machine Efficiency Dashboard</h3>
+        <span class="project-year">analytics / 2025</span>
+      </div>
+      <p class="project-problem"><strong>Problem:</strong> Machine performance data needs clearer summaries for review and reporting.</p>
+      <ul class="project-list">
+        <li>Google Sheets dashboard workflow</li>
+        <li>Automated reports and charts</li>
+        <li>Efficiency tracking for operations data</li>
+      </ul>
+      <div class="project-tech-icons" aria-label="Machine Efficiency Dashboard technologies">
+        <i class="devicon-google-plain" title="Google Apps Script"></i>
+        <i class="devicon-javascript-plain" title="JavaScript"></i>
+        <i class="fa fa-line-chart" title="Analytics"></i>
+      </div>
+    </a>
+
+    <a class="project-card content-card" href="https://github.com/ScarXiFy/CpE-Registry" target="_blank" rel="noopener noreferrer" aria-label="Open CpE Registry on GitHub">
+      <div class="project-card-header">
+        <h3>Contact Tracing CRUD App</h3>
+        <span class="project-year">crud / 2024</span>
+      </div>
+      <p class="project-problem"><strong>Problem:</strong> Contact records need a simple database-backed flow for creating, updating, and reviewing entries.</p>
+      <ul class="project-list">
+        <li>Create, read, update, and delete workflow</li>
+        <li>Database-backed records practice</li>
+        <li>Form handling and table views</li>
+      </ul>
+      <div class="project-tech-icons" aria-label="Contact Tracing CRUD App technologies">
+        <i class="devicon-php-plain" title="PHP"></i>
+        <i class="devicon-mysql-plain" title="MySQL"></i>
+        <i class="devicon-html5-plain" title="HTML5"></i>
+        <i class="devicon-css3-plain" title="CSS3"></i>
+      </div>
+    </article>
+  </div>
+</section>
 
 <!-- Page Container -->
-<div class="page-container container" id="about">
+<div class="page-container container" id="about" data-reveal>
 
   <div class="grid">
 
     <!-- LEFT COLUMN -->
     <div class="column left-column">
 
-      <div class="card profile-card text-grey">
+      <div class="card profile-card text-grey" data-reveal>
         <div class="image-container">
-          <img src="enrico.jpg" alt="Profile Photo" class="profile-img">
+          <img src="enrico.jpg" alt="Portrait of John Enrico D. Lauron" class="profile-img">
           <div class="name-box">
             <h2>John Enrico D. Lauron</h2>
           </div>
         </div>
 
         <div class="card-content">
-          <p><i class="fa fa-briefcase icon"></i>Software Engineer</p>
+          <p><i class="fa fa-briefcase icon"></i>Computer Engineering Student</p>
           <p><i class="fa fa-home icon"></i>Cebu City, Philippines</p>
           <p class="email-copy" data-email="johnenricolauron@gmail.com">
             <i class="fa fa-envelope icon"></i>johnenricolauron@gmail.com
@@ -79,83 +257,57 @@
 
           <p class="section-title"><i class="fa fa-asterisk icon"></i>Skills</p>
 
-          <p>HTML & CSS</p>
-          <div class="skill-bar">
-            <div class="skill-fill" style="width:80%"></div>
+          <div class="skill-group" data-reveal>
+            <h3>Frontend</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">TypeScript</span>
+            </div>
           </div>
 
-          <p>JavaScript</p>
-          <div class="skill-bar">
-            <div class="skill-fill" style="width:50%"></div>
+          <div class="skill-group" data-reveal>
+            <h3>Backend</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Python</span>
+            </div>
           </div>
 
-          <p>ReactJS</p>
-          <div class="skill-bar">
-            <div class="skill-fill" style="width:35%"></div>
+          <div class="skill-group" data-reveal>
+            <h3>Database</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">SQLite</span>
+            </div>
           </div>
 
-          <p>NextJS</p>
-          <div class="skill-bar">
-            <div class="skill-fill" style="width:40%"></div>
+          <div class="skill-group" data-reveal>
+            <h3>Programming Languages</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">C</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">x86 Assembly</span>
+            </div>
           </div>
 
-          <p>NodeJS</p>
-          <div class="skill-bar">
-            <div class="skill-fill" style="width:30%"></div>
+          <div class="skill-group" data-reveal>
+            <h3>Embedded Systems</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">8086 Concepts</span>
+              <span class="skill-tag">Control Logic</span>
+              <span class="skill-tag">Hardware-Aware Software</span>
+            </div>
           </div>
 
-          <p>TypeScript</p>
-          <div class="skill-bar">
-            <div class="skill-fill" style="width:20%"></div>
-          </div>
-
-          <p>MongoDB</p>
-          <div class="skill-bar">
-            <div class="skill-fill" style="width:60%"></div>
-          </div>
-
-          <p>MySQL</p>
-          <div class="skill-bar">
-            <div class="skill-fill" style="width:15%"></div>
-          </div>
-
-          <p>Python</p>
-          <div class="skill-bar">
-            <div class="skill-fill" style="width:25%"></div>
-          </div>
-
-          <p>C & C++</p>
-          <div class="skill-bar">
-            <div class="skill-fill" style="width:70%"></div>
-          </div>
-
-          <p>Java</p>
-          <div class="skill-bar">
-            <div class="skill-fill" style="width:65%"></div>
-          </div>
-
-          <p>x86 Assembly</p>
-          <div class="skill-bar">
-            <div class="skill-fill" style="width:10%"></div>
-          </div>
-
-          <br>
-
-          <p class="section-title"><i class="fa fa-globe icon"></i>Languages</p>
-
-          <p>English</p>
-          <div class="lang-bar">
-            <div class="lang-fill" style="width:100%"></div>
-          </div>
-
-          <p>Filipino/Cebuano</p>
-          <div class="lang-bar">
-            <div class="lang-fill" style="width:70%"></div>
-          </div>
-
-          <p>Japanese</p>
-          <div class="lang-bar">
-            <div class="lang-fill small"></div>
+          <div class="skill-group" data-reveal>
+            <h3>Tools</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+            </div>
           </div>
 
         </div>
@@ -166,7 +318,7 @@
     <!-- RIGHT COLUMN -->
     <div class="column right-column">
 
-      <div class="card content-card">
+      <div class="card content-card" data-reveal>
         <h2 class="section-header"><i class="fa fa-certificate"></i> Education</h2>
 
         <div class="card-content">
@@ -179,56 +331,17 @@
         <div class="card-content">
           <h5><b>Bachelor of Science in Computer Engineering</b></h5>
           <h6 class="date"><i class="fa fa-calendar"></i> University of San Carlos 2023 - 2027</h6>
-          <p></p>
+          <p>Focused on software development, programming fundamentals, computer systems, and embedded-system thinking.</p>
         </div>
       </div>
 
-      <div class="card content-card">
-        <h2 class="section-header"><i class="fa fa-code"></i> Projects</h2>
+      <div class="card content-card" data-reveal>
+        <h2 class="section-header"><i class="fa fa-code"></i> About My Work</h2>
 
         <div class="card-content">
-          <h5><b>T3via</b></h5>
-          <h6 class="date"><i class="fa fa-calendar"></i> 2022</h6>
-          <p>Interactive Trivia Quiz Application in C</p>
-          <div class="project-tech-icons">
-            <i class="devicon-c-original" title="C"></i>
-          </div>
-          <br>
-          <hr>
-        </div>
-
-        <div class="card-content">
-          <h5><b>KwarTrack</b></h5>
-          <h6 class="date"><i class="fa fa-calendar"></i> 2024</h6>
-          <p>Financial Management and Tracking Application</p>
-          <div class="project-tech-icons">
-            <i class="devicon-java-plain" title="Java"></i>
-          </div>
-          <br>
-          <hr>
-        </div>
-
-        <div class="card-content">
-          <h5><b>Carolinian Events Tracker</b></h5>
-          <h6 class="date"><i class="fa fa-calendar"></i> 2025</h6>
-          <p>University Event Management System</p>
-          <div class="project-tech-icons">
-            <i class="devicon-typescript-plain" title="TypeScript"></i>
-            <i class="devicon-javascript-plain" title="JavaScript"></i>
-            <i class="devicon-css3-plain" title="CSS3"></i>
-            <i class="devicon-html5-plain" title="HTML5"></i>
-          </div>
-          <br>
-          <hr>
-        </div>
-
-        <div class="card-content">
-          <h5><b>8086 Fish Hatchery Control System</b></h5>
-          <h6 class="date"><i class="fa fa-calendar"></i> 2025</h6>
-          <p>x86 Microprocessor-Based Freshwater Fish Egg Hatchery Control System</p>
-          <div class="project-tech-icons">
-            <i class="fa fa-microchip" title="x86 Assembly"></i>
-          </div>
+          <p>I am building a portfolio across two sides of computer engineering: practical web applications and systems that connect software decisions to hardware constraints.</p>
+          <p>My strongest current examples are the featured projects above: a university event tracker, a financial tracking app, a C trivia application, and an 8086-based hatchery control system.</p>
+          <a href="experience.html" class="inline-link">View academic and project experience</a>
         </div>
       </div>
 
@@ -237,13 +350,39 @@
   </div>
 </div>
 
+</main>
+
 <!-- FOOTER -->
-<footer class="footer" id="contact">
-  <p>Connect with me</p>
-  <a href="https://www.facebook.com/john.enrico.52" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fa fa-facebook-official"></i></a>
-  <a href="https://github.com/ScarXiFy" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fa fa-github"></i></a>
-  <a href="https://www.linkedin.com/in/john-enrico-lauron-a9643833b/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
-  <p class="footer-text">© 2026 Enricode.</p>
+<footer class="footer" id="contact" data-reveal>
+  <div class="footer-inner container">
+    <section class="footer-summary" aria-labelledby="footer-summary-title">
+      <p class="footer-kicker">ScarXiFy</p>
+      <h2 id="footer-summary-title">John Enrico D. Lauron</h2>
+      <p>Computer Engineering student in Cebu, Philippines, building web systems, automation projects, and hardware-aware control logic.</p>
+    </section>
+
+    <nav class="footer-socials" aria-label="Social links">
+      <h2>Connect</h2>
+      <div class="footer-social-grid">
+        <a href="https://github.com/ScarXiFy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="fa fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/john-enrico-lauron-a9643833b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a href="mailto:johnenricolauron@gmail.com" aria-label="Email">
+          <i class="fa fa-envelope"></i>
+        </a>
+        <a href="https://www.facebook.com/john.enrico.52" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <i class="fa fa-facebook-official"></i>
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="footer-bottom container">
+    <p>&copy; 2026 ScarXiFy.</p>
+  </div>
 </footer>
 
 <button id="back-to-top" class="back-to-top" title="Back to top">
